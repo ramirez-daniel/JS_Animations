@@ -14,7 +14,7 @@ function Dot(xpos, ypos, xstep, ystep, color, id) {
 }
 
 var dots = [];
-var numDots = 10;
+var numDots = 30;
 var container = document.getElementById("container");
 
 for(var i = 0; i < numDots; i++){
@@ -22,7 +22,7 @@ for(var i = 0; i < numDots; i++){
     elem.className = "dot";
     elem.id = "dot" + i;
     container.appendChild(elem);
-    dots[i] = new Dot(Math.random()*750,
+    dots[i] = new Dot(Math.random()*1850,
                        Math.random()*750,
                        Math.random(),
                        Math.random(),
@@ -34,7 +34,7 @@ var id = setInterval(frame, 5);
 
 function frame() {
     for (var i = 0; i < dots.length; i++) {
-        if (dots[i].xpos > 750 || dots[i].xpos < 0) {
+        if (dots[i].xpos > 1850 || dots[i].xpos < 0) {
             dots[i].xstep = -dots[i].xstep;
         }
         if (dots[i].ypos > 750 || dots[i].ypos < 0) {
