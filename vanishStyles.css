@@ -3,11 +3,24 @@
     50% {opacity: 1}
 }
 
+@keyframes changingBG {
+    0%, 100% {background-color: floralwhite;}
+    10% {background-color: aqua;}
+    20% {background-color: darkcyan;}
+    30% {background-color: chartreuse;}
+    40% {background-color: darkolivegreen;}
+    50% {background-color: deeppink;}
+    60% {background-color: firebrick;}
+    70% {background-color: crimson;}
+    80% {background-color: brown;}
+    90% {background-color: black}
+}
+
 #container {
+  animation: changingBG 10s infinite;
   width: 1900px;
   height: 800px;
   position: relative;
-  background: rebeccapurple;
   border-style: solid;
 }
 
